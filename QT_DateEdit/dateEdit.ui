@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>358</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{background-color: rgb(41, 43, 56);}
+
+/*DATE TIME*/
+QDateEdit{
+	height: 25px;
+	border: 1px solid rgb(22, 23, 30);
+	background-color: rgb(41, 43, 56);
+	color: white;
+}
+
+QDateEdit::drop-down {
+	subcontrol-origin: padding;
+	subcontrol-position: top right;
+	width: 25px; 
+}
+
+QDateEdit::down-arrow{
+	background-image: url(:/16x16/icons/16x16/icon_date.png);
+	background-position: center;
+	background-repeat: no-reperat;
+}
+
+QDateEdit:hover{
+	border: 1px solid #2196F3;
+}
+
+QDateEdit:pressed{
+	border: 1px solid #2196F3;
+}
+
+QDateEdit:disabled{
+	background-color:rgb(44, 44, 44);
+}
+
+
+/*CALENDAR WIDGET*/
+QCalendarWidget QToolButton {
+  	height: 30px;
+  	color: white;
+  	font-size: 18px;
+	width: 170px;
+	background-color: rgb(41, 43, 56);
+  }
+
+Calendarwidget QHeaderView{
+	aproperty-minimumSectionSize:0;
+	border-radius:5px;
+}
+
+#qt_calendar_prevmonth {
+	width: 20px;
+    qproperty-icon: url(:/16x16/icons/16x16/cil-chevron-left.png);
+}
+
+#qt_calendar_nextmonth {
+	width: 20px;
+    qproperty-icon: url(:/16x16/icons/16x16/cil-chevron-right.png);
+}
+
+#qt_calendar_navigationbar {
+    background-color: rgb(41, 43, 56);
+}
+
+#qt_calendar_yearedit {
+	width: 150px;
+    background-color:rgb(41, 43, 56);
+	 font-size: 18px;
+	color: white;
+}
+
+QCalendarWidget  QWidget{
+	alternate-background-color:rgb(63, 63, 63);
+}
+
+QCalendarWidget QMenu {
+  	width: 170px;
+  	color: white;
+  	font-size: 16px;
+  	background-color: rgb(41, 43, 56);
+	selection-background-color: #2196F3;
+}
+
+QCalendarWidget QAbstractItemView{
+	background-color:rgb(63, 63, 63);
+	selection-background-color: #2196F3;
+	color: rgb(255, 255, 255);
+}
+
+QCalendarWidget QAbstractItemView:disabled{
+	color:rgb(154, 153, 150);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QDateEdit" name="dateEdit">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>50</y>
+      <width>400</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="calendarPopup">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>640</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../files.qrc"/>
+ </resources>
+ <connections/>
+</ui>

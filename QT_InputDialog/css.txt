@@ -1,0 +1,9 @@
+QInputDialog{
+	background-color: rgb(41, 43, 56);
+	border: 1px solid rgb(22, 23, 30);
+	border: none;
+}
+
+QInputDialog QLineEdit{
+	background-image: url(:/16x16/icons/16x16/cil-camera.png);
+}

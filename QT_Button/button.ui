@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>439</width>
+    <height>184</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+background-color: rgb(41, 43, 56);}
+
+QPushButton#btn_1:hover{
+	border: 1px solid rgb(237, 51, 59);
+}
+
+QPushButton#btn_1:pressed{
+	background-color: rgb(237, 51, 59);
+}
+
+QPushButton#btn_2{
+	border-radius: none;
+	border: 1px solid rgb(94, 92, 100);
+	background-color: transparent;
+}
+
+QPushButton#btn_2:hover{
+	border: 1px solid rgb(22, 23, 30);
+	background-color: rgb(61, 56, 70);
+}
+
+QPushButton#btn_2:pressed{
+	background-color: rgb(94, 92, 100);
+	border: 1px solid rgb(22, 23, 30);
+}
+
+
+/*BUTTON */
+QPushButton{
+	border-radius: 15px;
+	border: 1px solid rgb(94, 92, 100);
+	background-color:rgb(63, 63, 63);
+	color:white;
+	font-size: 16px;
+	height: 30px;
+}
+
+QPushButton:hover{
+		border: 1px solid #2196F3;
+}
+
+QPushButton:pressed{
+	background-color: #2196F3;
+}
+
+QPushButton:disabled {
+	background-color:rgb(44, 44, 44);
+}
+
+QPushButton:!enabled{
+	background-color: rgb(44, 44, 44);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btn_1">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>50</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BTN 1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_2">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>50</y>
+      <width>40</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="../files.qrc">
+      <normaloff>:/16x16/icons/16x16/icon_info.svg</normaloff>:/16x16/icons/16x16/icon_info.svg</iconset>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>439</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../files.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,10 @@
+/*MESSAGE BOX*/
+QMessageBox {
+	background-color: rgb(41, 43, 56);
+	border: 1px solid rgb(22, 23, 30);
+	border: none;
+}
+
+QMessageBox QLabel{
+	font: 15pt "Ubuntu";
+}

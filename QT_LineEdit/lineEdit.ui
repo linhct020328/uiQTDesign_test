@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>544</width>
+    <height>237</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{background-color: rgb(41, 43, 56);}
+
+/*LINE EDIT*/
+QLineEdit {
+	height: 30px;
+	border-radius: 15px;
+    background-color: rgb(63, 63, 63);
+    background-image: url(:/16x16/icons/16x16/icon_search.png); 
+    background-repeat: no-repeat;
+    background-position: left;
+	padding-right: 8px;
+	padding-left: 16px;
+    color: white;
+    font-family: SegoeUI;
+    font-size: 15px;
+}
+
+QLineEdit:focus{
+	color: white;
+	border: 1px solid #2196F3;
+}
+
+QLineEdit:disabled{
+    background-color: rgb(63, 63, 63);
+	border: 1px solid rgb(94, 92, 100);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>80</y>
+      <width>300</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>544</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../files.qrc"/>
+ </resources>
+ <connections/>
+</ui>

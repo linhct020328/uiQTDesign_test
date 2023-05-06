@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>492</width>
+    <height>256</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{background-color: rgb(41, 43, 56);}
+
+QComboBox#cbb_1{
+	height: 30px;
+	width: 65px;
+	background-color:rgb(63, 63, 63);
+	border-radius: 15px;
+	border: 1px solid rgb(94, 92, 100);
+	font: 11pt &quot;Ubuntu&quot;;
+	color: white;
+	combobox-popup:0;
+ }
+
+QComboBox#cbb_1::drop-down {
+	subcontrol-origin: padding;
+	subcontrol-position: top right;
+	width: 20px; 
+	border-left-width: 2px;
+	border-left-color: rgb(52, 59, 72);
+	border-left-style: solid ;
+	border-top-right-radius: 1px;
+	border-bottom-right-radius: 1px; 
+}
+
+QComboBox#cbb_1:hover{
+	border: 1px solid #2196F3;
+}
+
+QComboBox#cbb_1:pressed{
+	border: 1px solid #2196F3;
+}
+
+QComboBox#cbb_1:disabled{
+	background-color:rgb(44, 44, 44);
+}
+
+/*COMBO BOX */
+QComboBox{
+	height: 25px;
+	border: 1px solid rgb(22, 23, 30);
+	background-color: rgb(41, 43, 56);
+	color: white;
+	combobox-popup:0;
+}
+
+QComboBox::drop-down {
+	subcontrol-origin: padding;
+	subcontrol-position: top right;
+	width: 25px; 
+}
+
+QComboBox:down-arrow{
+	background-image: url(:/16x16/icons/16x16/cil-arrow-bottom.png);
+	background-position: center;
+	background-repeat: no-reperat;
+}
+
+QComboBox:down-arrow:pressed{
+	background-image: url(:/16x16/icons/16x16/cil-arrow-top.png);
+	background-position: center;
+	background-repeat: no-reperat;
+}
+
+
+QComboBox:hover{
+	border: 1px solid #2196F3;
+}
+
+QComboBox:pressed{
+	border: 1px solid #2196F3;
+}
+
+QComboBox:disabled{
+	background-color:rgb(44, 44, 44);
+}
+
+QComboBox QAbstractItemView{
+	color: white;
+	background: transparent;
+	selection-background-color: #2196F3;
+}
+
+/* VERTICAL SCROLLBAR */
+ QScrollBar:vertical {
+	border: 1px solid rgb(94, 92, 100);
+    background-color: transparent; 
+    width: 16px;
+    margin: 15px 0 15px 0;
+	border-radius: 7px;
+ }
+
+QScrollBar::handle:vertical {	
+	background: rgb(94, 92, 100);
+	min-height: 15px;
+	border-radius: 7px;
+}
+QScrollBar::handle:vertical:hover{	
+	background: #2196F3;
+}
+QScrollBar::handle:vertical:pressed {	
+	background: #2196F3;
+}
+
+QScrollBar::sub-line:vertical {
+	background-image: url(:/16x16/icons/16x16/cil-caret-top.png);
+	height: 15px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical:hover, QScrollBar::sub-line:vertical:pressed {	
+	background-image: url(:/16x16/icons/16x16/caret-top-full.png);
+}
+
+QScrollBar::add-line:vertical {
+	background-image: url(:/16x16/icons/16x16/cil-caret-bottom.png);
+	height: 15px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+QScrollBar::add-line:vertical:hover, QScrollBar::add-line:vertical:pressed {
+	background-image: url(:/16x16/icons/16x16/caret-bottom-full.png);
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+}
+
+/* HORIZONTAL SCROLLBAR */
+ QScrollBar:horizontal {
+	border: 1px solid rgb(94, 92, 100);
+    background-color: transparent; 
+    height: 16px;
+    margin: 0 15px 0 15px;
+	border-radius: 7px;
+ }
+
+QScrollBar::handle:horizontal{	
+	background: rgb(94, 92, 100);
+	min-width: 15px;
+	border-radius: 7px;
+}
+QScrollBar::handle:horizontal:hover{	
+	background: #2196F3;
+}
+QScrollBar::handle:horizontal:pressed {	
+	background: #2196F3;
+}
+
+QScrollBar::sub-line:horizontal {
+	background-image: url(:/16x16/icons/16x16/cil-caret-left.png);
+	width: 15px;
+	subcontrol-position: left;
+	subcontrol-origin: margin;
+}
+QScrollBar::sub-line:horizontal:hover, QScrollBar::sub-line:horizontal:pressed {	
+	background-image: url(:/16x16/icons/16x16/caret-left-full.png);
+}
+
+QScrollBar::add-line:horizontal {
+	background-image: url(:/16x16/icons/16x16/cil-caret-right.png);
+	width: 15px;
+	subcontrol-position: right;
+	subcontrol-origin: margin;
+}
+QScrollBar::add-line:horizontal:hover, QScrollBar::add-line:horizontal:pressed {
+	background-image: url(:/16x16/icons/16x16/caret-right-full.png);
+}
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+	background: none;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QComboBox" name="cbb_1">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>100</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="maxVisibleItems">
+     <number>5</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>Linh</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Hoa</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Hậu</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Tuệ Anh</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Trang</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Huyền</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HIền</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Phương</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Vi</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Hạnh</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Huệ</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Tuấn</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Tâm</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Huy</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Nga</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Nhật</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Mỹ</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>492</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../files.qrc"/>
+ </resources>
+ <connections/>
+</ui>

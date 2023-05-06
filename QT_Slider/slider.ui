@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>685</width>
+    <height>143</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{background-color: rgb(41, 43, 56);}
+/*SLIDER */
+QSlider::groove:horizontal {
+	border: 1px solid #bbb;
+	height: 8px;
+	border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal {
+	background-color: #2196F3;
+	border: 1px solid rgb(94, 92, 100);
+	height: 10px;
+	border-radius: 4px;
+}
+
+QSlider::add-page:horizontal {
+	background: rgb(63, 63, 63);
+	border: 1px solid rgb(94, 92, 100);
+	height: 10px;
+	border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+	background-color: rgb(63, 63, 63);
+	border: 1px solid rgb(94, 92, 100);
+	width: 13px;
+	margin-top: -2px;
+	margin-bottom: -2px;
+	border-radius: 4px;
+}
+
+QSlider::handle:horizontal:hover {
+	background-color: #2196F3;
+	border: 1px solid #444;
+	width: 13px;
+	margin-top: -2px;
+	margin-bottom: -2px;
+	border-radius: 4px;
+}
+
+QSlider::groove:vertical {
+	border: 1px solid #bbb;
+	height: 8px;
+	border-radius: 4px;
+}
+
+QSlider::sub-page:vertical {
+	background-color: #2196F3;
+	border: 1px solid rgb(94, 92, 100);
+	height: 10px;
+	border-radius: 4px;
+}
+
+QSlider::add-page:vertical {
+	background: rgb(63, 63, 63);
+	border: 1px solid rgb(94, 92, 100);
+	height: 10px;
+	border-radius: 4px;
+}
+
+QSlider::handle:vertical {
+	background-color: rgb(63, 63, 63);
+	border: 1px solid rgb(94, 92, 100);
+	width: 13px;
+	margin-top: -2px;
+	margin-bottom: -2px;
+	border-radius: 4px;
+}
+
+QSlider::handle:vertical:hover, QSlider::handle:vertical:pressed {
+	background-color: #2196F3;
+	border: 1px solid #444;
+	width: 13px;
+	margin-top: -2px;
+	margin-bottom: -2px;
+	border-radius: 4px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QSlider" name="sldProgress">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>640</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>685</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
